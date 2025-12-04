@@ -2,7 +2,7 @@
 import Sound from './sound.js';
 import ASSETS from './assets.js';
 
-const SHOOTER_SIZE = 80;
+const SHOOTER_SIZE = 100;
 const PROJECTILE_SPEED = 500; // Slower speed feels better for physics check
 
 // Req 5: 5 colors
@@ -53,7 +53,7 @@ export default class Shooter {
       const distFromCenter = Math.hypot(p.x - this.engine.canvas.width/2, p.y - this.engine.canvas.height/2);
       
       // Only check collision if projectile is far enough from shooter
-      if (distFromCenter > 50 && (distFromCenter > 400 || p.life <= 0)) {
+      if (distFromCenter > 30 && (distFromCenter > 250 || p.life <= 0)) {
         
         // Use path raycast with actual dimensions
         const t = this.engine.path.getPointAlongRay(

@@ -6,9 +6,9 @@ export default class ZumaPath {
 
     // --- CONFIGURATION FOR OVAL SPIRAL ---
     const loops = 2.5;            // How many times it spirals
-    const startRadius = 500;      // How wide it starts (outside screen)
-    const endRadius = 100;         // How small the center hole is
-    const steps = 1500;            // Resolution of the curve
+    const startRadius = 300;      // How wide it starts (outside screen)
+    const endRadius = 50;         // How small the center hole is
+    const steps = 1000;            // Resolution of the curve
     const stretchX = 1.1;         // Horizontal stretch (makes it Oval)
     const stretchY = 0.8;         // Vertical squash
     // -------------------------------------
